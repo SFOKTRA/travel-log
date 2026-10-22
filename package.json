@@ -14,12 +14,17 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^1.17.0",
+    "@nuxt/icon": "^2.5.1",
+    "@tailwindcss/vite": "^4.3.3",
     "eslint": "^10.13.0",
     "nuxt": "^4.6.2",
+    "tailwindcss": "^4.3.3",
     "vue": "^3.5.44",
     "vue-router": "^5.4.0"
   },
   "devDependencies": {
+    "@iconify-json/material-symbols-light": "^1.2.96",
+    "daisyui": "^5.7.50",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0"
   },
