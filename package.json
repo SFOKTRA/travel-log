@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev-bd": "turso dev --db-file local.db",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -13,10 +14,12 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@libsql/client": "^0.18.0",
     "@nuxt/eslint": "^1.17.0",
     "@nuxt/icon": "^2.5.1",
     "@nuxtjs/color-mode": "^4.0.1",
     "@tailwindcss/vite": "^4.3.3",
+    "drizzle-orm": "^1.0.0-rc.5",
     "eslint": "^10.13.0",
     "nuxt": "^4.6.2",
     "tailwindcss": "^4.3.3",
@@ -26,6 +29,7 @@
   "devDependencies": {
     "@iconify-json/material-symbols-light": "^1.2.96",
     "daisyui": "^5.7.50",
+    "drizzle-kit": "^1.0.0-rc.5",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0"
   },

@@ -1,5 +1,7 @@
 import tailwindcss from "@tailwindcss/vite";
 
+import "./server/lib/env";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxt/eslint", "@nuxt/icon/module", "@nuxtjs/color-mode"],
