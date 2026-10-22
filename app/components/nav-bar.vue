@@ -8,6 +8,7 @@
       >
     </div>
     <div class="navbar-end">
+      <ThemeToggle class="mr-4" />
       <a class="btn btn-accent"
         >Sign In with Github
         <Icon name="tabler:brand-github-filled" size="18" />
