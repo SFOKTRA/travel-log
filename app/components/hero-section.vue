@@ -1,3 +1,6 @@
+<script setup lang="ts">
+import AuthButton from "./auth-button.vue";
+</script>
 <template>
   <div class="hero bg-base-200 container mx-auto mt-4">
     <div class="hero-content text-center min-h-96">
@@ -8,10 +11,7 @@
           app. Add locations, photos, and notes to create a digital journal of
           your journeys.
         </p>
-        <button class="btn btn-accent">
-          Sign In with Github
-          <Icon name="tabler:brand-github-filled" size="18" />
-        </button>
+        <AuthButton />
       </div>
     </div>
   </div>
