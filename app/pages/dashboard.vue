@@ -19,37 +19,39 @@ function toggleSidebar() {
     >
       <div
         class="flex hover:cursor-pointer hover:bg-base-200 p-2"
-        @click="toggleSidebar"
         :class="{
           'justify-center': !isSidebarOpen,
           'justify-end': isSidebarOpen,
         }"
+        @click="toggleSidebar"
       >
         <Icon v-if="isSidebarOpen" name="tabler:chevron-left" size="28" />
         <Icon v-else name="tabler:chevron-right" size="28" />
       </div>
       <div class="flex flex-col">
         <SidebarButton
-          :showLabel="isSidebarOpen"
+          :show-label="isSidebarOpen"
           label="Locations"
           icon="tabler:map"
           href="/dashboard"
         />
         <SidebarButton
-          :showLabel="isSidebarOpen"
+          :show-label="isSidebarOpen"
           label="Add Location"
           icon="tabler:circle-plus-filled"
           href="/dashboard/add"
         />
-        <div class="divider"></div>
+        <div class="divider"/>
         <SidebarButton
-          :showLabel="isSidebarOpen"
+          :show-label="isSidebarOpen"
           label="Sign Out"
           icon="tabler:logout-2"
           href="/sign-out"
         />
       </div>
     </div>
-    <div class="flex-1"></div>
+    <div class="flex-1">
+      <NuxtPage />
+    </div>
   </div>
 </template>

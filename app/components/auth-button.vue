@@ -9,7 +9,7 @@ const authStore = useAuthStore();
     <div tabindex="0" role="button" class="btn m-1">
       <div v-if="authStore.user.image" class="avatar">
         <div class="w-6 rounded-full">
-          <img :alt="authStore.user.name" :src="authStore.user.image" />
+          <img :alt="authStore.user.name" :src="authStore.user.image" >
         </div>
       </div>
       {{ authStore.user.name }}
@@ -20,7 +20,7 @@ const authStore = useAuthStore();
     >
       <li>
         <NuxtLink to="/sign-out">
-          <Icon name="tabler:logout-2" size="18"></Icon>
+          <Icon name="tabler:logout-2" size="18"/>
           Sign Out
         </NuxtLink>
       </li>
@@ -36,7 +36,7 @@ const authStore = useAuthStore();
     <span
       v-if="authStore.loading"
       class="loading loading-spinner loading-md"
-    ></span>
+    />
     <Icon v-else name="tabler:brand-github-filled" size="18" />
   </button>
 </template>

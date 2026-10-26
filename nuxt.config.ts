@@ -4,7 +4,14 @@ import "./server/lib/env";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/eslint", "@nuxt/icon/module", "@nuxtjs/color-mode", "@pinia/nuxt"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/icon/module",
+    "@nuxtjs/color-mode",
+    "@pinia/nuxt",
+    "@vee-validate/nuxt",
+    "nuxt-csurf",
+  ],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],

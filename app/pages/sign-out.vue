@@ -9,6 +9,6 @@ onMounted(() => {
   <div
     class="card bg-base-300 container mx-auto mt-4 min-h-72 text-center flex flex-col gap-4 justify-center items-center"
   >
-    <span class="loading loading-spinner loading-xl"></span>
+    <span class="loading loading-spinner loading-xl"/>
   </div>
 </template>
