@@ -3,6 +3,7 @@ import { useForm } from "vee-validate";
 import type { TypedSchema } from "vee-validate";
 import type { z } from "zod";
 import type { FetchError } from "ofetch";
+import { insertLocation } from "~~/server/lib/db/schema/location";
 
 // adapter to be added for handling validation errors and adapting vee-validate to zod (the version I installed does not support the zodTypedSchema yet)
 function zodTypedSchema<T extends z.ZodType>(

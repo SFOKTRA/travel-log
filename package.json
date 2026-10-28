@@ -22,11 +22,14 @@
     "@tailwindcss/vite": "^4.3.3",
     "@vee-validate/nuxt": "^4.15.1",
     "better-auth": "^1.7.12",
-    "drizzle-orm": "^1.0.0-rc.5",
+    "drizzle-orm": "^0.45.4",
+    "drizzle-zod": "^0.8.3",
     "eslint": "^10.13.0",
+    "nanoid": "^6.0.2",
     "nuxt": "^4.6.2",
     "nuxt-csurf": "^1.6.6",
     "pinia": "^4.1.0",
+    "slug": "^12.0.1",
     "tailwindcss": "^4.3.3",
     "vue": "^3.5.44",
     "vue-router": "^5.4.0",
@@ -35,11 +38,11 @@
   "devDependencies": {
     "@iconify-json/material-symbols-light": "^1.2.96",
     "daisyui": "^5.7.50",
-    "drizzle-kit": "^1.0.0-rc.5",
+    "drizzle-kit": "^0.31.11",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0"
   },
   "lint-staged": {
-    "*": "npm run lint"
+    "*.{ts,js,vue}": "npm run lint"
   }
 }

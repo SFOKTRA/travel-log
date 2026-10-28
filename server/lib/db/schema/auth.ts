@@ -1,5 +1,4 @@
-import { sql } from "drizzle-orm";
-import { relations } from "drizzle-orm/_relations";
+import { sql, relations  } from "drizzle-orm";
 import {
   sqliteTable,
   text,
@@ -39,7 +38,7 @@ export const session = sqliteTable(
       .notNull(),
     ipAddress: text("ip_address"),
     userAgent: text("user_agent"),
-    userId: text("user_id")
+    userId: int()
       .notNull()
       .references(() => user.id, { onDelete: "cascade" }),
   },
@@ -50,9 +49,9 @@ export const account = sqliteTable(
   "account",
   {
     id: int().primaryKey({ autoIncrement: true }),
-    accountId: text("account_id").notNull(),
-    providerId: text("provider_id").notNull(),
-    userId: text("user_id")
+    accountId: int("account_id").notNull(),
+    providerId: int("provider_id").notNull(),
+    userId: int("user_id")
       .notNull()
       .references(() => user.id, { onDelete: "cascade" }),
     accessToken: text("access_token"),
